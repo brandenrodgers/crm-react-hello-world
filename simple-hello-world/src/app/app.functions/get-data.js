@@ -7,7 +7,7 @@ exports.main = async (context = {}, sendResponse) => {
 
   try {
     const data = {
-      alertMesage:
+      alertMessage:
         "Hello from serverless function! You typed: " +
         event.payload.inputValue,
     };
