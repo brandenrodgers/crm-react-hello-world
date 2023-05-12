@@ -1,0 +1,15 @@
+{
+  "name": "Simple hello world app",
+  "description": "This app demonstrates basic handshake between React frontend code and serverless backend for a card.",
+  "scopes": ["crm.objects.contacts.read", "crm.objects.contacts.write"],
+  "public": false,
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "extensions/hello-world-card.json"
+        }
+      ]
+    }
+  }
+}
