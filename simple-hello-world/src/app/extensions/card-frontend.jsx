@@ -10,8 +10,8 @@ const HelloWorld = ({ context, runServerless, onAlertClick }) => {
         name: "get-data",
         payload: { inputValue },
       });
-      let response = serverlessResponse.context;
-      onAlertClick({ message: response.alertMesage });
+      const { context } = serverlessResponse.response;
+      onAlertClick({ message: context.alertMessage });
     } catch (error) {
       console.error("Error executing serverless: ", error);
     }
